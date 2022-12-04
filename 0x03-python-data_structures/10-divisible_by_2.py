@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Finds all multiples of 2 in a list"""
+# Finds all multiples of 2 in a list
 
 
 def divisible_by_2(my_list=[]):
@@ -10,4 +10,4 @@ def divisible_by_2(my_list=[]):
         else:
             list_result.append(False)
 
-    return list_result            
+    return list_result
