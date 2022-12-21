@@ -8,8 +8,18 @@ class Square:
         """ Initialize a square
         @size(int):size of the square
         @position(int, int) tuple postion of the square
-        all validation done by the setter
         """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")        
+
+        if (not isinstance(position, tuple) or
+                len(position) != 2 or
+                not all(isinstance(num, int) for num in position) or
+                not all(num >= 0 for num in position)):
+            raise TypeError("position must be a tuple of 2 positive integers")
+
         self.__size = size
         self.__position = position
 
