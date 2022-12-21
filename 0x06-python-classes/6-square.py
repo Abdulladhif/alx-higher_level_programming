@@ -12,7 +12,7 @@ class Square:
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
-            raise ValueError("size must be >= 0")        
+            raise ValueError("size must be >= 0")
 
         if (not isinstance(position, tuple) or
                 len(position) != 2 or
@@ -61,4 +61,4 @@ class Square:
                 if i == 0:
                     print("\n" * self.__position[1], end="")
                 print(" " * self.__position[0], end="")
-                print("#" * self.__size)               
+                print("#" * self.__size)
