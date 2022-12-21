@@ -48,7 +48,7 @@ class Square:
             print()
         else:
             for i in range(self.__size):
-                if i == 1:
+                if i == 0:
                     print("\n" * self.__position[1], end="")
                 print(" " * self.__position[0], end="")
                 print("#" * self.__size)               
